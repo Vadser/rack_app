@@ -1,0 +1,11 @@
+AllCops:
+  NewCops: enable
+
+Style/Documentation:
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
+    - 'app.rb'
+    - 'app/controllers/base_controller.rb'
+    - 'app/controllers/welcome_controller.rb'
+    - 'lib/router.rb'
