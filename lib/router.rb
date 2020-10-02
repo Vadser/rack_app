@@ -8,7 +8,7 @@ class Router
   end
 
   def resolve(env)
-    path = env['REQUEST_PATH']
+    path = env['REQUEST_PATH'] || env['PATH_INFO']
     if routes.key?(path)
       ctrl(routes[path]).call
     else
