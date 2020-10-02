@@ -16,7 +16,8 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require 'rack/test'
-require './app'
+$LOAD_PATH.unshift File.expand_path(__dir__)
+load('app.rb')
 ENV['RACK_ENV'] = 'test'
 
 module RackAppMixin
